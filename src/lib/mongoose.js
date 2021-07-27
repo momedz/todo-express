@@ -5,8 +5,7 @@ mongoose.Promise = require('bluebird');
 const options = {
   useCreateIndex: true,
   useNewUrlParser: true,
-  reconnectTries: Number.MAX_VALUE,
-  reconnectInterval: 500,
+  useUnifiedTopology: true,
   connectTimeoutMS: 10000,
   socketTimeoutMS: 45000,
 };

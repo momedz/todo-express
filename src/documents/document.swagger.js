@@ -24,7 +24,7 @@ const document = (directory='**') => swaggerJSDoc({
   apis: ['./src/document/*.yaml', `./src/documents/${directory}/*.yaml`]
 });
 
-router.use('/doc', 
+router.use('/swagger', 
   swaggerUi.serve,
   swaggerUi.setup(document())
 );
