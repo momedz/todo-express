@@ -27,7 +27,7 @@ const split = (thing) => {
 };
 
 const apply = app => {
-  stream.write('# Science-mis-room-back\r\n');
+  stream.write('# todo-express\r\n');
   stream.write('## API LIST TABLE\r\n');
   stream.write('| TYPE | PATH |\r\n|:--:|:--|\r\n');
   app._router.stack.forEach(generateRoute.bind(null, []));
